@@ -1,0 +1,252 @@
+{
+  "dataset_summary": {
+    "total_employees": 1500,
+    "attrition_rate": 0.268
+  },
+  "model_performance": {
+    "model_type": "logistic_regression",
+    "accuracy": 0.7666666666666667,
+    "precision": 0.5423728813559322,
+    "recall": 0.8,
+    "f1_score": 0.6464646464646465,
+    "roc_auc": 0.8204545454545454,
+    "pr_auc": 0.6023905852569608,
+    "confusion_matrix": [
+      [
+        166,
+        54
+      ],
+      [
+        16,
+        64
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9120879120879121,
+        "recall": 0.7545454545454545,
+        "f1-score": 0.8258706467661692,
+        "support": 220.0
+      },
+      "1": {
+        "precision": 0.5423728813559322,
+        "recall": 0.8,
+        "f1-score": 0.6464646464646465,
+        "support": 80.0
+      },
+      "accuracy": 0.7666666666666667,
+      "macro avg": {
+        "precision": 0.7272303967219221,
+        "recall": 0.7772727272727273,
+        "f1-score": 0.7361676466154079,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.8134972372260507,
+        "recall": 0.7666666666666667,
+        "f1-score": 0.7780290466857631,
+        "support": 300.0
+      }
+    }
+  },
+  "top_odds_ratios": [
+    {
+      "risk_factor": "High Overtime (> 25h/mo)",
+      "odds_ratio": 7.51,
+      "ci_95_range": "[5.68 - 9.92]",
+      "attrition_rate_exposed": "62.6%",
+      "attrition_rate_unexposed": "18.2%",
+      "relative_risk": 3.43,
+      "affected_headcount": 289
+    },
+    {
+      "risk_factor": "Poor Work-Life Balance (<= 2)",
+      "odds_ratio": 5.8,
+      "ci_95_range": "[4.46 - 7.53]",
+      "attrition_rate_exposed": "56.4%",
+      "attrition_rate_unexposed": "18.2%",
+      "relative_risk": 3.09,
+      "affected_headcount": 337
+    },
+    {
+      "risk_factor": "Underpaid (Compa Ratio < 0.85)",
+      "odds_ratio": 4.6,
+      "ci_95_range": "[3.39 - 6.25]",
+      "attrition_rate_exposed": "56.7%",
+      "attrition_rate_unexposed": "22.1%",
+      "relative_risk": 2.56,
+      "affected_headcount": 203
+    },
+    {
+      "risk_factor": "Low Job Satisfaction (<= 2)",
+      "odds_ratio": 2.85,
+      "ci_95_range": "[2.24 - 3.62]",
+      "attrition_rate_exposed": "42.2%",
+      "attrition_rate_unexposed": "20.4%",
+      "relative_risk": 2.07,
+      "affected_headcount": 438
+    },
+    {
+      "risk_factor": "Poor Manager Relationship (<= 2)",
+      "odds_ratio": 2.05,
+      "ci_95_range": "[1.58 - 2.67]",
+      "attrition_rate_exposed": "38.8%",
+      "attrition_rate_unexposed": "23.6%",
+      "relative_risk": 1.65,
+      "affected_headcount": 317
+    },
+    {
+      "risk_factor": "Long Commute (> 35km without remote)",
+      "odds_ratio": 2.05,
+      "ci_95_range": "[1.13 - 3.71]",
+      "attrition_rate_exposed": "42.2%",
+      "attrition_rate_unexposed": "26.3%",
+      "relative_risk": 1.6,
+      "affected_headcount": 45
+    },
+    {
+      "risk_factor": "Seasonal/Contract Type",
+      "odds_ratio": 1.93,
+      "ci_95_range": "[1.43 - 2.60]",
+      "attrition_rate_exposed": "38.8%",
+      "attrition_rate_unexposed": "24.7%",
+      "relative_risk": 1.57,
+      "affected_headcount": 219
+    },
+    {
+      "risk_factor": "Stagnant Compensation (> 24m no raise)",
+      "odds_ratio": 1.89,
+      "ci_95_range": "[1.44 - 2.50]",
+      "attrition_rate_exposed": "37.9%",
+      "attrition_rate_unexposed": "24.3%",
+      "relative_risk": 1.56,
+      "affected_headcount": 272
+    },
+    {
+      "risk_factor": "Low Training (< 15h/yr)",
+      "odds_ratio": 1.22,
+      "ci_95_range": "[0.94 - 1.58]",
+      "attrition_rate_exposed": "29.8%",
+      "attrition_rate_unexposed": "25.8%",
+      "relative_risk": 1.15,
+      "affected_headcount": 373
+    }
+  ],
+  "high_risk_cohorts": [
+    {
+      "cohort_name": "Burned-Out Peak Contributors",
+      "urgency": "CRITICAL",
+      "total_employees": 270,
+      "attrition_rate": 0.6333333333333333,
+      "primary_driver": "Chronic workload exhaustion, sustained high overtime hours"
+    },
+    {
+      "cohort_name": "Under-Market High Performers (Flight Risk)",
+      "urgency": "CRITICAL",
+      "total_employees": 83,
+      "attrition_rate": 0.6987951807228916,
+      "primary_driver": "Salary below market benchmark despite high merit/performance"
+    },
+    {
+      "cohort_name": "Stagnant Mid-Tenure Employees",
+      "urgency": "HIGH",
+      "total_employees": 165,
+      "attrition_rate": 0.4121212121212121,
+      "primary_driver": "Lack of upward mobility, promotion blockage, limited career growth"
+    },
+    {
+      "cohort_name": "Seasonal & Peak-Season Attrition",
+      "urgency": "HIGH",
+      "total_employees": 141,
+      "attrition_rate": 0.425531914893617,
+      "primary_driver": "Peak season workload spikes without onboarding support or contract renewal clarity"
+    },
+    {
+      "cohort_name": "Disengaged Onboarding / Early Career",
+      "urgency": "MEDIUM",
+      "total_employees": 240,
+      "attrition_rate": 0.37916666666666665,
+      "primary_driver": "Onboarding disconnect, poor manager alignment, culture misfit"
+    }
+  ],
+  "organizational_strategy": {
+    "department_breakdown": [
+      {
+        "department": "Engineering",
+        "headcount": 223,
+        "avg_risk": 0.5161690491161076,
+        "high_risk_count": 109,
+        "avg_overtime": 20.452466367713004,
+        "avg_compa": 0.9830044843049328,
+        "avg_satisfaction": 2.8520179372197307,
+        "high_risk_pct": 0.48878923766816146
+      },
+      {
+        "department": "Sales",
+        "headcount": 215,
+        "avg_risk": 0.45063545322626763,
+        "high_risk_count": 87,
+        "avg_overtime": 16.793488372093023,
+        "avg_compa": 0.9717674418604652,
+        "avg_satisfaction": 2.925581395348837,
+        "high_risk_pct": 0.4046511627906977
+      },
+      {
+        "department": "Operations",
+        "headcount": 219,
+        "avg_risk": 0.4547287357323318,
+        "high_risk_count": 85,
+        "avg_overtime": 12.872146118721462,
+        "avg_compa": 0.9835159817351597,
+        "avg_satisfaction": 2.9452054794520546,
+        "high_risk_pct": 0.3881278538812785
+      },
+      {
+        "department": "Customer Support",
+        "headcount": 206,
+        "avg_risk": 0.4516655445434578,
+        "high_risk_count": 79,
+        "avg_overtime": 15.740291262135923,
+        "avg_compa": 0.98873786407767,
+        "avg_satisfaction": 3.0242718446601944,
+        "high_risk_pct": 0.38349514563106796
+      },
+      {
+        "department": "Product",
+        "headcount": 198,
+        "avg_risk": 0.40938850386546566,
+        "high_risk_count": 68,
+        "avg_overtime": 10.0010101010101,
+        "avg_compa": 0.957929292929293,
+        "avg_satisfaction": 2.9494949494949494,
+        "high_risk_pct": 0.3434343434343434
+      },
+      {
+        "department": "HR",
+        "headcount": 201,
+        "avg_risk": 0.3799864515787567,
+        "high_risk_count": 57,
+        "avg_overtime": 11.050248756218904,
+        "avg_compa": 0.9757213930348259,
+        "avg_satisfaction": 3.0199004975124377,
+        "high_risk_pct": 0.2835820895522388
+      },
+      {
+        "department": "Marketing",
+        "headcount": 238,
+        "avg_risk": 0.3656027471138396,
+        "high_risk_count": 61,
+        "avg_overtime": 9.806302521008403,
+        "avg_compa": 0.9918067226890757,
+        "avg_satisfaction": 3.063025210084034,
+        "high_risk_pct": 0.25630252100840334
+      }
+    ],
+    "systemic_drivers": [
+      "Compensation Gap below market benchmark"
+    ],
+    "total_evaluated": 1500,
+    "critical_risk_employees": 299,
+    "high_risk_employees": 321
+  }
+}
